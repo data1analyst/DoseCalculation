@@ -22,6 +22,8 @@ elif her_dose > her_pre:
         remain = 440 - ad
         print("use all of the old one and {} ml from the new one".format(calc))
         print("don't forget to write the remainning herceptin {} mg ".format(remain))
+else:
+    print("use all of the old one")
 now = datetime.now()
 current=now.strftime("%I:%M")
 day=datetime.today()
