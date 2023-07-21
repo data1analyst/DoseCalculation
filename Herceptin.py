@@ -15,10 +15,10 @@ if her_dose < her_pre :
     
 elif her_dose > her_pre:
     ad = her_dose - her_pre
-    if ad = 0 :
+    if ad == 0 :
         print("use all of the old and new one")
     else:
-        calc = round(calc/22)
+        calc = round(ad/22)
         remain = 440 - ad
         print("use all of the old one and {} ml from the new one".format(calc))
         print("don't forget to write the remainning herceptin {} mg ".format(remain))
