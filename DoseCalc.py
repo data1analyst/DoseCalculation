@@ -16,10 +16,10 @@ while True:
                 final_dilu=drug_con/(vial[0]/vial[1])
                 n_vial=final_dilu//vial[1]
                 remain=final_dilu%vial[1]
-                if n_vial == 0 :
-                    print("please dilue {} ml equal".format(final_dilu))
+                if n_vial == 0 or remain == 0 :
+                    print("please dilue {} ml ".format(final_dilu))
                 else:    
-                print("please dilue {} ml equal to {} vials of {} + {}ml ".format(final_dilu,round(n_vial,2),drug_name,round(remain,2)))
+                print("please dilue {} ml equal to {} vials of {} + {} ml ".format(final_dilu,round(n_vial,2),drug_name,round(remain,2)))
         w=input("do you want to try again?")
         if w == "no":
             break
