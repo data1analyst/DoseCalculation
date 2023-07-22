@@ -20,6 +20,8 @@ else:
     if ad > 440 :
         remain = ad - 440
         print("use all of the old and new one and you still need {} mg ".format(remain))
+    elif ad == 440:
+        print("use all of the old and new one")
     else:
         calc = round(ad/22)
         remain = 440 - ad
