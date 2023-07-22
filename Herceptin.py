@@ -13,14 +13,14 @@ if her_dose < her_pre :
     print("use {} ml from the old one ".format(ml))
     print("write the remain of herceptin {} mg".format(remain))
     
-elif her_dose > her_pre:
+elif her_dose == her_pre:
+    print("use all of the old one")
+else:
     ad = her_dose - her_pre
     calc = round(ad/22)
     remain = 440 - ad
     print("use all of the old one and {} ml from the new one".format(calc))
     print("don't forget to write the remainning herceptin {} mg ".format(remain))
-else:
-    print("use all of the old one")
 now = datetime.now()
 current=now.strftime("%I:%M")
 day=datetime.today()
