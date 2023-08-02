@@ -28,7 +28,8 @@ else:
         remain = 440 - ad
         if her_pre == 0:
             print("use {} from the new one".format(calc))
-        print("use all of the old one and {} ml from the new one".format(calc))
+        else:
+            print("use all of the old one and {} ml from the new one".format(calc))
         print("don't forget to write the remainning herceptin {} mg ".format(remain))
 
 now = datetime.now()
