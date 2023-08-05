@@ -4,7 +4,7 @@ drugs={"cytarabine":[100,5],"oncovin":[1,1],"adriamycin":[50,25],"taxoter":[80,8
 
 drugs["platinol"]=[50,50]
 drugs["methotrexate"]=[500,20]
-drugs["dactinomycin"]=[500,1]
+drugs["dactinomycin"]=[0.5,1]
 while True:
 #take input from the user
     drug_name=input("please input drug name: ").lower()
@@ -20,13 +20,12 @@ while True:
                 print("please dilue {} ml ".format(final_dilu))
             else:    
                 print("please dilue {} ml equal to {} vials of {} + {} ml ".format(final_dilu,round(n_vial,2),drug_name,round(remain,2)))
-    w=input("do you want to try again?")
-    if w == "no":
-        break
         else:
             print("the drug hasn't been updated yet")
             print("you can check your drugs available in this list:")
             print(list(drugs.keys()))
-        q=input("do you want to try again?")
-        if q == "no":
-            break
+    w=input("do you want to try again?")
+    if w == "no":
+        break
+        
+    
