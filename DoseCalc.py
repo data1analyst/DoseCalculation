@@ -23,10 +23,10 @@ while True:
     w=input("do you want to try again?")
     if w == "no":
         break
-    else:
-        print("the drug hasn't been updated yet")
-        print("you can check your drugs available in this list:")
-        print(list(drugs.keys()))
+        else:
+            print("the drug hasn't been updated yet")
+            print("you can check your drugs available in this list:")
+            print(list(drugs.keys()))
         q=input("do you want to try again?")
         if q == "no":
             break
