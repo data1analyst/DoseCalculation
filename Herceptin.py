@@ -20,7 +20,7 @@ else:
     ad = her_dose - her_pre
     if ad > 440 :
         remain = ad - 440
-        print("use all of the old and new one and you still need {} mg ".format(remain))
+        print("use all of the old and new one and you still need {} mg equal {} ml ".format(remain,round(remain/22,2) ))
     elif ad == 440:
         print("use all of the old and new one")
     else:
